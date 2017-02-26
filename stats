@@ -118,7 +118,7 @@ caption string "%{kw}%{-b b}%t"
 split -v
 screen -t	Htop	1 sh -c "sudo htop"
 focus right
-screen -t	IFtop	2 sh -c "sudo iftop -i wlan0"
+screen -t	IFtop	2 sh -c "sudo iftop -bP -i wlan0"
 split
 focus down
 screen -t	NetStat	3 sh -c "sudo netstat -taupnc"
